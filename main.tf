@@ -20,7 +20,6 @@ resource "azurerm_resource_group" "tamops" {
   name     = "edittest"
   location = "centralindia"
 }
- 
 #Create Virtual Network
 resource "azurerm_virtual_network" "vnet" {
   name                = "tamops-vnet"
