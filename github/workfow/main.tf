@@ -13,18 +13,18 @@ provider "azurerm" {
   features {}
 }
  
-data "azurerm_client_config" "current" {}
+data "azurerm_client_config" "current1" {}
  
 #Create Resource Group
 resource "azurerm_resource_group" "tamops" {
-  name     = "tfdemo"
+  name     = "edittest"
   location = "eastus2"
 }
  
 #Create Virtual Network
 resource "azurerm_virtual_network" "vnet" {
   name                = "tamops-vnet"
-  address_space       = ["192.168.0.0/16"]
+  address_space       = ["192.168.2.1/16"]
   location            = "eastus2"
   resource_group_name = azurerm_resource_group.tamops.name
 }
