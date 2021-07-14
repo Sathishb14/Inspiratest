@@ -18,7 +18,7 @@ data "azurerm_client_config" "current1" {}
 #Create Resource Group
 resource "azurerm_resource_group" "tamops" {
   name     = "edittest"
-  location = "eastus2"
+  location = "centralindia"
 }
  
 #Create Virtual Network
