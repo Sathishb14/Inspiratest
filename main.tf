@@ -17,13 +17,13 @@ data "azurerm_client_config" "current1" {}
  
 #Create Resource Group
 resource "azurerm_resource_group" "tamops" {
-  name     = "edittest"
+  name     = "edittest45y8y45854"
   location = "centralindia"
 }
 #Create Virtual Network
 resource "azurerm_virtual_network" "vnet" {
   name                = "tamops-vnet"
-  address_space       = ["192.168.2.1/16"]
+  address_space       = ["192.168.1.1/16"]
   location            = "centralindia"
   resource_group_name = azurerm_resource_group.tamops.name
 }
